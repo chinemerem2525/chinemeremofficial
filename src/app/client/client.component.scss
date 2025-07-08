@@ -1,0 +1,55 @@
+.whatsapp-icon svg path {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.whatsapp-icon:hover svg path {
+  fill: #FF9330;
+}
+
+#sticky-header {
+  z-index: 1030; /* higher than Bootstrap navbars and offcanvas if needed */
+  background-color: #fcf8f5; /* optional: to prevent see-through when scrolling */
+
+}
+
+.logo-flex {
+  display: flex;
+  align-items: center; /* vertically centers the text with the image */
+  gap: 8px; /* spacing between image and text */
+  text-decoration: none; /* optional: removes underline */
+}
+
+.logo-flex img {
+  height: 50px; /* adjust as needed */
+}
+
+.logo-flex p {
+  margin-bottom: -9px;
+  color: black; /* ensure visibility on dark background */
+  // padding: 1px 1px;
+  // border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.official
+{
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+.official:hover
+{
+  color: black;
+}
+
+  // .lets-talk{
+  //   display: none;
+  // }
+
+@media (max-width: 466px) {
+  .lets-talk{
+    display: none;
+  }
+}
