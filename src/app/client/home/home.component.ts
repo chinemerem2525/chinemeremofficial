@@ -25,6 +25,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadResume() {
+  const link = document.createElement('a');
+  link.href = '../../../assets/cv/chinemerem-resume.pdf';
+  link.download = 'chinemerem-resume.pdf';
+  link.click();
+}
+
   // Form submission
   onSubmit() {
     if (this.contactForm.valid) {
