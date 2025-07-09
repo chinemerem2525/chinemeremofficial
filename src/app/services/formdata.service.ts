@@ -8,13 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class FormdataService {
 
-
+ private apiUrl = 'http://localhost:5000/api/contact';
 
 
   constructor(private http: HttpClient) { }
 
-  saveDetails(formData: Form):Observable<Form>{
-   return this.http.post<Form>('https://portfolio-website-contac-67999-default-rtdb.firebaseio.com/form.json', formData)
+  saveDetails(formData: any): Observable<any> {
+    return this.http.post(this.apiUrl, formData);
   }
 
 }
