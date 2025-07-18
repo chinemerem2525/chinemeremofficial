@@ -59,3 +59,92 @@
   margin-left: 1rem;
 }
 }
+
+.counter {
+  font-size: 23px;
+}
+
+
+.faq-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+
+  .faq-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2b2b2b;
+  }
+
+  .faq-item {
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #2b2b2b;
+      transition: color 0.3s ease;
+    }
+
+    span {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    span.rotated {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #555;
+      padding-left: 1.75rem;
+      line-height: 1.6;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+
+.steps-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  background: #fdfdfd;
+  text-align: center;
+
+  .step-box {
+    padding: 1rem 1rem;
+    color: #222;
+
+    i {
+      font-size: 3rem;
+      color: #2255dd;
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

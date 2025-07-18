@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class FormdataService {
 
- private apiUrl = 'http://localhost:5000/api/contact';
+ private apiUrl = 'https://portfolio-server-0oro.onrender.com/api/contact';
 
 
   constructor(private http: HttpClient) { }

@@ -410,6 +410,13 @@
         </section>
         <!-- About Us Sectin End -->
 
+<section class="steps-section">
+  <div class="step-box" *ngFor="let step of steps">
+    <i class="fa-solid" [ngClass]="step.icon"></i>
+    <h3>{{ step.title }}</h3>
+    <p>{{ step.description }}</p>
+  </div>
+</section>
 
 
 
@@ -1014,6 +1021,24 @@
            <div id="contact-us"></div>
         </section>
         <!-- Testimonial section End -->
+
+        <div class="faq-wrapper">
+          <h3 class="section-title text-dark">Frequent questions</h3>
+
+          <div class="faq-item" *ngFor="let faq of faqs; let i = index" (click)="toggle(i)">
+            <div class="faq-question">
+              <span [class.rotated]="faq.open">⌃</span>
+            <span class="testimonial-texts fw-bold font-Syne">{{ faq.question }}</span>
+            </div>
+
+            <div class="faq-answer" *ngIf="faq.open">
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
+
+
+
 
         <!-- Contact Section Start -->
         <section class="bg-white pt-20 pb-120">
