@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Form } from 'src/app/model/form';
 import { FormdataService } from 'src/app/services/formdata.service';
 import { NotificationService } from 'src/app/services/notification.service';
-
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ import { NotificationService } from 'src/app/services/notification.service';
 export class HomeComponent implements OnInit {
    formData!: Form;
   contactForm: FormGroup;
-  constructor(private fb: FormBuilder, private sc: FormdataService, private ns: NotificationService) {
+  constructor(private fb: FormBuilder, private sc: FormdataService, private ns: NotificationService, private router: Router) {
     this.contactForm = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
@@ -75,6 +76,7 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+
 toggle(index: number): void {
     this.faqs.forEach((faq, i) => {
       faq.open = i === index ? !faq.open : false;
@@ -82,8 +84,19 @@ toggle(index: number): void {
   }
 
   ngOnInit(): void {
+      this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        // 🔄 Force a refresh/re-initialization of your logic
+        this.loadProjects(); // replace with your actual logic
+      });
   }
 
+      loadProjects() {
+    // Your logic to reload content goes here
+    console.log('Project page reloaded');
+  }
+  
   downloadResume() {
   const link = document.createElement('a');
   link.href = '../../../assets/cv/chinemerem-resume.pdf';
