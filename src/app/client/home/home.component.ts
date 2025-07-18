@@ -25,21 +25,25 @@ export class HomeComponent implements OnInit {
     {
       title: 'Step 1: Consultation',
       description: 'A meeting will be scheduled to discuss your needs and objectives. Together, we will create a detailed plan that aligns with your vision and goals.',
+      number: 1,
       icon: 'fa-people-arrows'
     },
     {
       title: 'Step 2: Planning',
       description: 'I focus on translating your needs and objectives into a comprehensive, actionable strategy. With the help of a roadmap, I define the project scope, establish timelines, identify key milestones, and allocate the necessary resources.',
+      number: 2,
       icon: 'fa-clipboard-list'
     },
     {
       title: 'Step 3: Sit Back and Relax',
       description: 'Your work load, my responsibility. I will take care of every detail, providing regular updates to keep you informed.',
+      number: 3,
       icon: 'fa-person-lounge'
     },
     {
       title: 'Step 4: Launch and Celebrate',
       description: 'Once everything meets the standard, I will launch your site, software, or brand. Celebrate the successful completion of your project and enjoy the results!',
+      number: 4,
       icon: 'fa-rocket'
     }
   ];

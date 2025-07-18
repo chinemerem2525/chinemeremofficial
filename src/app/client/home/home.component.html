@@ -410,15 +410,19 @@
         </section>
         <!-- About Us Sectin End -->
 
-<section class="steps-section">
-  <div class="step-box" *ngFor="let step of steps">
-    <i class="fa-solid" [ngClass]="step.icon"></i>
-    <h3>{{ step.title }}</h3>
-    <p>{{ step.description }}</p>
-  </div>
-</section>
+                <!-- Working Process Starts -->
+          <span class="container text-warning text-xl" style="margin-left: 2rem;">Working Process</span>
+          <h3 class="container section-title circle-shape text-dark position-relative" style="margin-bottom: -12px;">The Process Behind <br>the
+          Magic Step by Step</h3>
+          <section class="steps-section">
+            <div class="step-box" *ngFor="let step of steps">
+              <span class="text-dark text-32 fw-bold font-Syne position-relative">{{ step.number }}</span>
 
-
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.description }}</p>
+            </div>
+          </section>
+          <!-- Working Process Ends -->
 
         <!-- tabs start -->
         <section class="featured-properties">
@@ -472,7 +476,7 @@
                         </span>
                             </button>
                             <button class="tab-btn tab-btn justify-content-between align-items-center d-inline-flex" data-bs-toggle="pill" data-bs-target="#skills_tab">
-                                Skills
+                                Stack
                                 <span class="inline-block animate-arrow-up">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -825,7 +829,6 @@
           <div id="projects"></div>
         </section>
         <!-- tabs end -->
-
 
         <!-- Portfolio Section Start -->
         <section class="bg-secondary py-120">

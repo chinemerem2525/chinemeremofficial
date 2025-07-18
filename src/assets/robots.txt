@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.yourdomain.com/sitemap.xml
+Sitemap: https://chinemeremofficial.com/sitemap.xml
 
-# Disallow private or temp paths (optional examples)
-Disallow: /admin/
-Disallow: /temp/
+llms: https://chinemeremofficial.com/llms.txt
+
+

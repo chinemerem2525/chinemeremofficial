@@ -114,17 +114,22 @@
   }
 }
 
+.text-32 {
+  font-size: 49px;
+}
 
 .steps-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
   padding: 4rem 2rem;
   background: #fdfdfd;
   text-align: center;
 
+  // Default: 2 per row (for tablets and up)
+  grid-template-columns: repeat(2, 1fr);
+
   .step-box {
-    padding: 1rem 1rem;
+    padding: 1rem;
     color: #222;
 
     i {
@@ -146,5 +151,10 @@
       max-width: 400px;
       margin: 0 auto;
     }
+  }
+
+  // Mobile: 1 per row
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
