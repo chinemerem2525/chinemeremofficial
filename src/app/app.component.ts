@@ -30,7 +30,7 @@ constructor(private meta: Meta, private title: Title) {
     },
     {
       property: 'og:image',
-      content: 'https://chinemeremofficial.com/assets/img/profile/chinemerem-cyril-og.png' // Replace with real image URL
+      content: 'https://chinemeremofficial.com/assets/images/logo/new-logo.png' // Replace with real image URL
     },
     { property: 'og:url', content: 'https://chinemeremofficial.com' } // Replace with your actual domain
   ]);
