@@ -19,7 +19,7 @@ constructor(private meta: Meta, private title: Title) {
     {
       name: 'keywords',
       content:
-        'Full Stack Software Engineer, Hire Full Stack Developer, Angular Developer, Node.js Developer, Front-End Developer, Web Application Developer, Remote Software Engineer, Software Engineer Nigeria, Expert Web Developer, Backend Developer, Frontend Developer, REST API Developer, JavaScript Developer, TypeScript Developer, MongoDB, VS code, HTML, CSS, Javascript, Hire Developer Worldwide'
+        'Full Stack Software Engineer, Chinemerem Official, Hire Full Stack Developer, Angular Developer, Node.js Developer, Front-End Developer, Web Application Developer, Remote Software Engineer, Software Engineer Nigeria, Expert Web Developer, Backend Developer, Frontend Developer, REST API Developer, JavaScript Developer, TypeScript Developer, MongoDB, VS code, HTML, CSS, Javascript, Hire Developer Worldwide'
     },
     { name: 'author', content: 'Chinemerem Cyril' },
     { property: 'og:title', content: 'Chinemerem Cyril – Full Stack Software Engineer for Hire' },
